@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Music Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Music Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Albums</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">Lists</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="player">
+            <h2>Now Playing</h2>
+            <div id="songInfo">
+                <p id="songTitle">Song Title</p>
+                <p id="artist">Artist</p>
+            </div>
+            <div id="controls">
+                <button id="playPauseButton" onclick="pauseAudio()"><i class="fas fa-play">Pause</i></button>
+                <button id="nextButton" onclick="playAudio()"><i class="fas fa-forward">Play</i></button>
+            </div>
+        </section>
+        <section id="albumList">
+            <h2>Albums</h2>
+            <div class="album">
+                <img src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg">
+                <h3>Album Title</h3>
+                <p>Artist</p>
+            </div>
+            <div class="album">
+                <img src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg">
+                <h3>Album Title</h3>
+                <p>Artist</p>
+            </div>
+        </section>
+        <section id="artistList">
+            <h2>Artists</h2>
+            <div class="artist">
+                <img src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg">
+                <h3>Artist Name</h3>
+            </div>
+            <div class="artist">
+                <img src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg">
+                <h3>Artist Name</h3>
+            </div>
+        </section>
+        <section id="listList">
+            <h2>Lists</h2>
+            <div class="list">
+                <h3>List Title</h3>
+                <p>Number of Songs</p>
+            </div>
+            <div class="list">
+                <h3>List Title</h3>
+                <p>Number of Songs</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="theme">
+            <button id="theme1" onclick="changeTheme('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg')">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
+            </button>
+            <button id="theme1" onclick="changeTheme('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg')">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
+            </button>
+            <button id="theme1" onclick="changeTheme('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg')">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
+            </button>
+            <!-- <button id="theme2" onclick="changeTheme('background2.jpg')"><img src="background2.jpg"></button>
+            <button id="theme3" onclick="changeTheme('background3.jpg')"><img src="background3.jpg"></button> -->
+        </div>
+    </footer>
+</body>
+
+</html>
